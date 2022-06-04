@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Thespoon866</title>
+    <title>The Spoon 866 | A restaurant Guide</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <h1 style="text-align: center">The Spoon</h1>
+    <p style="text-align: center">
+      <%= link_to 'Home', restaurants_path %> |
+      <%= link_to 'Add Restaurant', new_restaurant_path %>
+    </p>
+    <hr/>
     <%= yield %>
   </body>
 </html>
